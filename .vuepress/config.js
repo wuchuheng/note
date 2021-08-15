@@ -113,7 +113,13 @@ module.exports = {
             artist: 'R.I.P Karen Carpenter',
             url: 'https://qiniu.wuchuheng.com/picgo/yesterday_once_more.mp3',
             cover: 'https://qiniu.wuchuheng.com/picgo/hqdefault.jpeg'
-          }
+          },
+          {
+            name: 'Careless Whispers',
+            artist: 'George Michael',
+            url: 'https://qiniu.wuchuheng.com/mp3/3619073933.mp3',
+            cover: 'https://qiniu.wuchuheng.com/mp3/20210815193624.png'
+          },
         ]
       }]
 
