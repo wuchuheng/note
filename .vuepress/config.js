@@ -93,20 +93,15 @@ module.exports = {
     "author": "吴楚衡",
     "authorAvatar": "/avatar.png",
     "record": "xxxx",
-    "startYear": "2017",
+    "startYear": "2017"
   },
   plugins: [['@vuepress-reco/comments', {
-    solution: 'vssue',
+    solution: 'valine',
     options: {
-      title: '白日梦想家.留言',
-      platform: 'github',
-      owner: 'wuchuheng',
-      repo: 'https://github.com/wuchuheng/notebook',
-      clientId: '916449ad6806e1a2073b',
-      clientSecret: '8e3fb945f1aaf9fb09ee68140108e72b5f69fbfd',
+      appId: '0U1XAhKqVw8K59iwS97wyykp-gzGzoHsz',
+      appKey: 'ymUAfzBTqKsW6y4dinkORQbm'
     }
   }]],
-
   "markdown": {
     "lineNumbers": true
   }
