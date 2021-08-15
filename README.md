@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+# heroText: vuepress-theme-reco
+tagline: 来找我吧，我的目标是星辰大海
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',

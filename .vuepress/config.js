@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "白日梦想家",
+  "title": "白日梦想家.笔记",
   "description": "",
   "dest": "public",
   "head": [
@@ -47,12 +47,14 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/wuchuheng/notebook",
             "icon": "reco-github"
           }
         ]
       }
     ],
+    mode: 'dark',
+    subSidebar: 'auto',
     "sidebar": {
       "/docs/theme-reco/": [
         "",
@@ -90,9 +92,10 @@ module.exports = {
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "吴楚衡",
+    "author": "白日梦想家.笔记",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
+    record: '粤ICP备17071471号-2',
+    recordLink: 'https://beian.miit.gov.cn',
     "startYear": "2017"
   },
   plugins: [['@vuepress-reco/comments', {
