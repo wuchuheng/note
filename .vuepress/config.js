@@ -1,6 +1,6 @@
 const getConfig = require("vuepress-bar");
 const prefix = "docs"
-const { sidebar } = getConfig(prefix, { }); // Point to *parent* dir of `.vuepress`.
+const { sidebar } = getConfig(prefix, { 'pinyinNav': true })
 
 const config =  {
   "title": "白日梦想家.笔记",
@@ -118,8 +118,8 @@ const config =  {
             cover: 'https://qiniu.wuchuheng.com/mp3/20210815193624.png'
           },
         ]
-      }]
-
+      }],
+      'permalink-pinyin'
   ],
   "markdown": {
     "lineNumbers": true
