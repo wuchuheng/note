@@ -1,4 +1,8 @@
-module.exports = {
+const getConfig = require("vuepress-bar");
+const prefix = "docs"
+const { sidebar } = getConfig(prefix, { }); // Point to *parent* dir of `.vuepress`.
+
+const config =  {
   "title": "白日梦想家.笔记",
   "description": "",
   "dest": "public",
@@ -34,12 +38,7 @@ module.exports = {
       {
         "text": "Docs",
         "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
+        "link": "/docs/catalogue"
       },
       {
         "text": "Contact",
@@ -51,16 +50,14 @@ module.exports = {
             "icon": "reco-github"
           }
         ]
-      }
+      },
     ],
+    // sidebar: newSidebar,
     mode: 'dark',
     subSidebar: 'auto',
     "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
+      "/docs/": [
+          ...sidebar,
       ]
     },
     "type": "blog",
@@ -96,7 +93,7 @@ module.exports = {
     "authorAvatar": "/avatar.png",
     record: '粤ICP备17071471号-2',
     recordLink: 'https://beian.miit.gov.cn',
-    "startYear": "2017"
+    "startYear": "2017",
   },
   plugins: [
     ['@vuepress-reco/comments', {
@@ -123,10 +120,9 @@ module.exports = {
         ]
       }]
 
-
-
   ],
   "markdown": {
     "lineNumbers": true
   }
 }
+module.exports = config
