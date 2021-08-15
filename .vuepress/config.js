@@ -98,13 +98,28 @@ module.exports = {
     recordLink: 'https://beian.miit.gov.cn',
     "startYear": "2017"
   },
-  plugins: [['@vuepress-reco/comments', {
-    solution: 'valine',
-    options: {
-      appId: '0U1XAhKqVw8K59iwS97wyykp-gzGzoHsz',
-      appKey: 'ymUAfzBTqKsW6y4dinkORQbm'
-    }
-  }]],
+  plugins: [
+    ['@vuepress-reco/comments', {
+      solution: 'valine',
+      options: {
+        appId: '0U1XAhKqVw8K59iwS97wyykp-gzGzoHsz',
+        appKey: 'ymUAfzBTqKsW6y4dinkORQbm'
+      }
+    }],
+      ['@vuepress-reco/vuepress-plugin-bgm-player', {
+        audios: [
+          {
+            name: 'Yesterday once more',
+            artist: 'R.I.P Karen Carpenter',
+            url: 'https://qiniu.wuchuheng.com/picgo/yesterday_once_more.mp3',
+            cover: 'https://qiniu.wuchuheng.com/picgo/hqdefault.jpeg'
+          }
+        ]
+      }]
+
+
+
+  ],
   "markdown": {
     "lineNumbers": true
   }
