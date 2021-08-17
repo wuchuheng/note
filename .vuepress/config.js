@@ -214,7 +214,8 @@ const config = {
                 },
             ]
         }],
-        'permalink-pinyin'
+        'permalink-pinyin',
+        'fulltext-search'
     ],
     "markdown": {
         "lineNumbers": true

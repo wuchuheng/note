@@ -11,6 +11,7 @@
     "@wuchuhengtools/vuepress-theme-reco": "1.6.7",
     "vuepress": "1.8.2",
     "vuepress-bar": "^0.4.2",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-plugin-rpurl": "boboidream/vuepress-plugin-rpurl"
   },
