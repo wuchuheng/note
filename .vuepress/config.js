@@ -22,7 +22,7 @@ const config = {
             }
         ]
     ],
-    "theme": "@wuchuhengtools/vuepress-theme-reco",
+    "theme": "vuepress-theme-reco",
     "themeConfig": {
         "nav": [
             {
