@@ -40,18 +40,22 @@ const config = {
                 "icon": "reco-message",
                 "link": "/docs/catalogue"
             },
-            {
-                "text": "Contact",
-                "icon": "reco-message",
-                "items": [
-                    {
-                        "text": "GitHub",
-                        "link": "https://github.com/wuchuheng/notebook",
-                        "icon": "reco-github"
-                    }
-                ]
-            },
         ],
+        blogConfig: {
+            category: {
+                location: 2, // 在导航栏菜单中所占的位置，默认2
+                // text: 'Categories' // 默认 “分类”
+            },
+            tag: {
+                location: 3, // 在导航栏菜单中所占的位置，默认3
+                // text: 'Tags' // 默认 “标签”
+            },
+            socialLinks: [
+                { icon: 'reco-github', link: 'https://github.com/wuchuheng' },
+                { icon: 'reco-mail', link: 'mailto:root@wuchuheng.com' },
+                { icon: 'reco-npm', link: 'https://www.npmjs.com/~wuchuheng' }
+            ]
+        },
         // sidebar: newSidebar,
         mode: 'dark',
         subSidebar: 'auto',
@@ -61,23 +65,7 @@ const config = {
             ]
         },
         "type": "blog",
-        "blogConfig": {
-            "category": {
-                "location": 2,
-                "text": "Category"
-            },
-            "tag": {
-                "location": 3,
-                "text": "Tag"
-            }
-        },
         "friendLink": [
-            // {
-            //   "title": "vuepress-theme-reco",
-            //   "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-            //   "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-            //   "link": "https://vuepress-theme-reco.recoluan.com"
-            // },
             {
                 "title": "linux运维笔记",
                 "desc": "linux服务端运维笔记",
