@@ -22,7 +22,7 @@ const config = {
             }
         ]
     ],
-    "theme": "vuepress-theme-reco",
+    "theme": "reco",
     "themeConfig": {
         "nav": [
             {
@@ -38,7 +38,7 @@ const config = {
             {
                 "text": "Docs",
                 "icon": "reco-message",
-                "link": "/docs/catalogue"
+                "link": "/docs/1.catalogue"
             },
         ],
         blogConfig: {
