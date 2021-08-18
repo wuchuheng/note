@@ -115,11 +115,6 @@ const config = {
                 "link": "https://developer.ibm.com/learningpaths/iot-getting-started-iot-development//"
             },
             {
-                "title": "IoT development",
-                "desc": "IBM IoT开发者社区",
-                "link": "https://developer.ibm.com/learningpaths/iot-getting-started-iot-development//"
-            },
-            {
                 "title": "老李秀社区",
                 "desc": "自我标榜\"可能是东半球最好的php程序员\"， 其实力可见一斑",
                 "link": "https://developer.ibm.com/learningpaths/iot-getting-started-iot-development//"
