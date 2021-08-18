@@ -172,8 +172,12 @@ const config = {
                 title: 'rxjs教程',
                 desc: '用通俗的方式把rxjs讲明白，很不错的教程，值得学习',
                 link: 'https://ithelp.ithome.com.tw/articles/10186104'
-            }
-
+            },
+            {
+                title: '李金深\'s Blog',
+                desc: '对前端感兴趣的技术员，有常人没有的细心和耐心，很值得学习',
+                link: 'http://www.yemengshen.cn/main'
+            },
         ],
         "logo": "/logo.png",
         "search": true,
