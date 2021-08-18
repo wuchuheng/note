@@ -101,7 +101,7 @@ const config = {
             },
             {
                 "title": "SHUWOOM's blog",
-                "desc": "全栈技术博客，能深入到后端技术原理和前端技术应用，十分也得，很值得学习",
+                "desc": "全栈技术博客，能深入到后端技术原理和前端技术应用，十分了得，很值得学习",
                 "link": "https://shuwoom.com/"
             },
             {

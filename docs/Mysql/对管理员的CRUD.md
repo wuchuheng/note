@@ -14,13 +14,13 @@ mysql> grant [操作,操作...] on [数据库名.数据表] to [用户名]@[ip�
 mysql> flush privileges; //刷新系统权限表
 ```
 :::
+<!-- more -->
 ### 1.1 方式一
 增加一个用户test1密码为abc，让他可以在任何主机上登录，并对所有数据库有查询、插入、修改、删除的权限。首先用以root用户连入MYSQL，然后键入以下命令：
 ``` sql
 mysql> grant select,insert,update,delete on *.* to test1@“%” Identified by “abc”;
 mysql> flush privileges; 
 ```
-<!-- more -->
 但增加的用户是十分危险的，你想如某个人知道test1的密码，那么他就可以在internet上的任何一台电脑上登录你的mysql数据库并对你的数据可以为所欲为了，解决办法见例方式二
 ### 1.2 方式二
 增加一个用户test2密码为abc,让他只可以在localhost上登录，并可以对数据库mydb进行查询、插入、修改、删除的操作（localhost指本地主机，即MYSQL数据库所在的那台主机），这样用户即使用知道test2的密码，他也无法从internet上直接访问数
