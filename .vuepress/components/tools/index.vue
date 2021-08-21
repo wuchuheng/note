@@ -36,7 +36,7 @@ export default {
     cover: {type: String},
     name: {type: String},
     desc: {type: String},
-    links: {type: String},
+    links: {type: Array, default: []},
     website: {type: String, default: ''},
   },
   created() {
