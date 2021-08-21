@@ -205,6 +205,7 @@ const config = {
         }],
         [require('./plugins/BgMusic/index'), {
             isMini: true,
+            autoShrink: true,
             audios: [
                 {
                     name: 'Yesterday once more',

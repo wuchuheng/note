@@ -1,5 +1,4 @@
 <template>
-  <div class="wrapper">
     <div class="itemRender">
       <img :src="cover"/>
       <a v-if="website.length > 0 " :href="website" target="_blank">
@@ -21,7 +20,7 @@
         </template>
       </div>
     </div>
-  </div>
+
 
 </template>
 
@@ -70,22 +69,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper {
-  margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1.5rem;
-  grid-auto-rows: minmax(15rem, auto);
-  word-wrap: break-word;
-  word-break: break-all;
-  max-width: 100%;
-
-  > div {
+  .itemRender {
     border-radius: 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     padding: 1rem;
     display: grid;
     justify-items: center;
+    width: 100%;
     > a {
       color: inherit;
     }
@@ -96,7 +86,6 @@ export default {
     }
   }
 
-}
 .dark{
   .itemRender {
     box-shadow: 0px 1px 2px #0a53efc2, 0px 2px 4px #473f4f14;
