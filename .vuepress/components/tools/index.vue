@@ -75,7 +75,6 @@ export default {
     padding: 1rem;
     display: grid;
     justify-items: center;
-    width: 100%;
     > a {
       color: inherit;
     }
