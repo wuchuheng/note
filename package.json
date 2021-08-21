@@ -16,5 +16,8 @@
     "vuepress-theme-reco": "https://gitpkg.now.sh/wuchuhengtools/vuepress-theme-reco/packages/vuepress-theme-reco"
   },
   "description": "",
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "2.6.4",
+    "element-ui": "^2.15.5"
+  }
 }

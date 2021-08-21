@@ -40,6 +40,12 @@ const config = {
                 "icon": "reco-message",
                 "link": "/docs/1.catalogue"
             },
+            {
+                "text": "tools",
+                "icon": "reco-other",
+                "link": "/docs/gong-ju-ku/1.shu-ju-ku-gong-ju"
+            },
+
         ],
         blogConfig: {
             category: {
@@ -197,7 +203,8 @@ const config = {
                 appKey: 'ymUAfzBTqKsW6y4dinkORQbm'
             }
         }],
-        ['@vuepress-reco/vuepress-plugin-bgm-player', {
+        [require('./plugins/BgMusic/index'), {
+            isMini: true,
             audios: [
                 {
                     name: 'Yesterday once more',

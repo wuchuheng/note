@@ -162,21 +162,33 @@ export default {
           this.$refs.vbar.style.width = vbar_width
         }
         this.firstLoad = false
-        /* 自动播放的处理
+        // 自动播放的处理
         if (this.autoplay) {
-          let playPromise = this.$refs.bgm.play()
+          const playPromise = this.$refs.bgm.play()
           if (playPromise !== undefined) {
             playPromise.then(res => {
+              console.log('自动播放成功')
+              this.curPlayStatus = 'playing'
             }).catch(err => {
               console.log('自动播放失败')
+              // DOMException: play() failed because the user didn‘t interact with the document first
+              // 监听用户点击事件实现自动播放
+              window.addEventListener("click", this.pageClickHandle)
             })
           }
-        } */
+        }
       }
       // 播放状态下歌曲准备完成立即播放
       if (this.curPlayStatus === 'playing') {
         this.playBgm()
       }
+    },
+    pageClickHandle () {
+      // 自动播放的处理
+      if (this.autoplay) {
+        this.playBgm()
+      }
+      window.removeEventListener('click', this.pageClickHandle)
     },
     // 暂停
     pauseBgm () {
@@ -276,6 +288,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@require '.vuepress/plugins/BgMusic/bin/assets/iconfont/iconfont.css'
-@import '.vuepress/plugins/BgMusic/bin/styles/index.styl'
+@require './assets/iconfont/iconfont.css'
+@import './styles/index.styl'
 </style>
