@@ -6,7 +6,13 @@
       </a>
       <h3 v-else>{{name}}</h3>
       <p>{{desc}}</p>
-      <div class="links">
+      <div class="links grid"
+           :class="{
+        'grid-column-1': links.length === 1,
+        'grid-column-2': links.length === 2,
+        'grid-column-3': links.length >= 3,
+      }"
+      >
         <template
             v-for="(link, index) in links"
         >
@@ -28,7 +34,10 @@
 
 const m1Type = 'M1',
     macType = 'mac',
-    windowType = 'windows'
+    windowType = 'windows',
+    androidType = 'android',
+    linuxType = 'linux',
+    iosType = 'ios'
 export default {
   name: 'tools',
   props: {
@@ -41,13 +50,20 @@ export default {
   },
   created() {
     this.linkTypeMapName[m1Type] = 'M1 下载'
-    this.linkTypeMapName[windowType] = 'windows 下载'
-    this.linkTypeMapName[macType] = 'mac 下载'
+    this.linkTypeMapName[windowType] = 'Windows 下载'
+    this.linkTypeMapName[macType] = 'Mac 下载'
+    this.linkTypeMapName[androidType] = 'Android 下载'
+    this.linkTypeMapName[linuxType] = 'Linux 下载'
+    this.linkTypeMapName[iosType] = 'Ios 下载'
 
     this.linkTypeMapButtonColor[m1Type] = 'primary'
+    this.linkTypeMapButtonColor[iosType] = 'primary'
     this.linkTypeMapButtonColor[windowType] = 'success'
     this.linkTypeMapButtonColor[macType] = 'danger'
+    this.linkTypeMapButtonColor[androidType] = 'danger'
+    this.linkTypeMapButtonColor[linuxType] = 'success'
   },
+
   data() {
     return {
       linkTypeMapName: { },
@@ -114,5 +130,18 @@ export default {
     margin-left: 0px !important;
   }
 }
-
+  .grid {
+    display: grid;
+    justify-items: center;
+    grid-gap: .5rem;
+  }
+  .grid-column-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-column-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-column-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 </style>
