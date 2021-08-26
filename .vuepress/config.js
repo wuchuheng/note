@@ -38,7 +38,7 @@ const config = {
             {
                 "text": "Docs",
                 "icon": "reco-message",
-                "link": "/docs/1.catalogue"
+                "link": "/docs/1.1catalogue"
             },
             {
                 "text": "tools",
