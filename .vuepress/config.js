@@ -181,8 +181,13 @@ const config = {
             },
             {
                 title: '李金深\'s Blog',
-                desc: '对前端感兴趣的技术员，有常人没有的细心和耐心，很值得学习',
+                desc: '对前端感兴趣的技术员，有常人没有的细心，很值得学习',
                 link: 'http://www.yemengshen.cn/main'
+            },
+            {
+                title: 'Hello Github',
+                desc: '专门收集有意思的开源项目',
+                link: 'https://hellogithub.com/'
             },
         ],
         "logo": "/logo.png",
