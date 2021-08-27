@@ -43,7 +43,7 @@ const config = {
             {
                 "text": "tools",
                 "icon": "reco-other",
-                "link": "/docs/gong-ju-ku/1.shu-ju-ku-gong-ju"
+                "link": "/docs/kai-fa-gong-ju/1.shu-ju-ku-gong-ju"
             },
 
         ],

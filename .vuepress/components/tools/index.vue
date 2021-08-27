@@ -94,7 +94,11 @@ export default {
     > a {
       color: inherit;
     }
+    > p {
+      margin: 0;
+    }
     > img {
+      border-radius: 7%;
       $imgWidth = 4rem ;
       width: $imgWidth;
       height: $imgWidth;
