@@ -38,12 +38,12 @@ const config = {
             {
                 "text": "Docs",
                 "icon": "reco-message",
-                "link": "/docs/1.1catalogue"
+                "link": "/docs/01.catalogue"
             },
             {
                 "text": "tools",
                 "icon": "reco-other",
-                "link": "/docs/kai-fa-gong-ju/1.1.shu-ju-ku-gong-ju"
+                "link": "/docs/12.kai-fa-gong-ju/1.1.shu-ju-ku-gong-ju"
             },
 
         ],
