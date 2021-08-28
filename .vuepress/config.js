@@ -43,7 +43,7 @@ const config = {
             {
                 "text": "tools",
                 "icon": "reco-other",
-                "link": "/docs/kai-fa-gong-ju/1.shu-ju-ku-gong-ju"
+                "link": "/docs/kai-fa-gong-ju/1.1.shu-ju-ku-gong-ju"
             },
 
         ],
@@ -62,7 +62,6 @@ const config = {
                 { icon: 'reco-npm', link: 'https://www.npmjs.com/~wuchuheng' }
             ]
         },
-        // sidebar: newSidebar,
         mode: 'dark',
         subSidebar: 'auto',
         "sidebar": {
