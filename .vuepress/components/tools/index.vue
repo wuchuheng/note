@@ -85,6 +85,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import "common.styl"
   .itemRender {
     border-radius: 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -134,18 +135,4 @@ export default {
     margin-left: 0px !important;
   }
 }
-  .grid {
-    display: grid;
-    justify-items: center;
-    grid-gap: .5rem;
-  }
-  .grid-column-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .grid-column-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-column-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
 </style>

@@ -161,26 +161,6 @@ export default {
     margin-left: 0px !important;
   }
 }
-  .grid {
-    display: grid;
-    justify-items: center;
-    grid-gap: .5rem;
-  }
-  .grid-column-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .grid-column-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-column-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .grid-column-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-column-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
   .tagsRender {
     margin-bottom: .3rem;
   }
