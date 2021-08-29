@@ -43,7 +43,7 @@ const config = {
             {
                 "text": "tools",
                 "icon": "reco-other",
-                "link": "/docs/12.shou-lu-shi-yong-de-kai-fa-gong-ju.html"
+                "link": "/docs/97.shou-lu-shi-yong-de-kai-fa-gong-ju.html"
             },
 
         ],

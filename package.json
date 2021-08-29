@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "reco_luan",
   "scripts": {
-    "dev": "vuepress dev . --open --host \"192.168.0.101\"",
+    "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build ."
   },
   "devDependencies": {
