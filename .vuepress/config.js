@@ -226,10 +226,12 @@ const config = {
             ]
         }],
         'permalink-pinyin',
-        'fulltext-search'
+        'fulltext-search',
+        'vuepress-plugin-mermaidjs'
     ],
     "markdown": {
         "lineNumbers": true
     }
 }
+
 module.exports = config
