@@ -38,7 +38,7 @@ const config = {
             {
                 "text": "Docs",
                 "icon": "reco-message",
-                "link": "/docs/01.catalogue"
+                "link": "/docs/02.git/01.ji-ben-pei-zhi"
             },
             {
                 "text": "tools",
