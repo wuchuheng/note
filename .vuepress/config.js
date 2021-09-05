@@ -15,6 +15,13 @@ const config = {
             }
         ],
         [
+            "link",
+            {
+                "rel": "manifest",
+                "href": "/manifest.json"
+            }
+        ],
+        [
             "meta",
             {
                 "name": "viewport",
@@ -227,7 +234,8 @@ const config = {
         }],
         'permalink-pinyin',
         'fulltext-search',
-        'vuepress-plugin-mermaidjs'
+        'vuepress-plugin-mermaidjs',
+        '@vuepress/pwa'
     ],
     "markdown": {
         "lineNumbers": true
