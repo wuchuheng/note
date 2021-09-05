@@ -235,7 +235,17 @@ const config = {
         'permalink-pinyin',
         'fulltext-search',
         'vuepress-plugin-mermaidjs',
-        '@vuepress/pwa'
+        [
+            '@vuepress/pwa',{
+            serviceWorker: true,
+            updatePopup:  { message: "发现新内容可用", buttonText: "刷新" },
+            generateSWConfig: {
+                globPatterns: [
+                    '**\/*.{css,js,html,png,jpg,jpeg,gif,svg,woff,woff2,eot,ttf,otf}',
+                ],
+            }
+        },
+        ],
     ],
     "markdown": {
         "lineNumbers": true
