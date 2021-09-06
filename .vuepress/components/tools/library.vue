@@ -110,6 +110,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import "common.styl"
   .itemRender {
     >img {
       border-radius: 7%;

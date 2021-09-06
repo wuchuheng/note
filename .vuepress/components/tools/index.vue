@@ -6,6 +6,26 @@
       </a>
       <h3 v-else>{{name}}</h3>
       <p>{{desc}}</p>
+      <div class="links grid tagsRender"
+           v-if="tags.length > 0"
+           :class="{
+              'grid-column-1': tags.length === 1 ,
+              'grid-column-2': tags.length === 2 ,
+              'grid-column-3': tags.length === 3 ,
+              'grid-column-4': tags.length === 4 ,
+              'grid-column-5': tags.length >= 5 ,
+            }"
+      >
+        <el-tag
+            size="mini"
+            v-for="(item, index) in tags"
+            :key="`key_${index}`"
+            :type="tagTypes[index % tagTypes.length].type"
+            effect="dark">
+          {{ item }}
+        </el-tag>
+      </div>
+
       <div class="links grid"
            :class="{
         'grid-column-1': links.length === 1,
@@ -47,6 +67,7 @@ export default {
     desc: {type: String},
     links: { type: Array, default: () => [] },
     website: {type: String, default: ''},
+    tags: {type: Array, default: () => []}
   },
   created() {
     this.linkTypeMapName[m1Type] = 'M1 下载'
@@ -66,6 +87,13 @@ export default {
 
   data() {
     return {
+      tagTypes: [
+        { type: ''},
+        { type: 'success'},
+        { type: 'info'},
+        { type: 'danger'},
+        { type: 'warning'}
+      ],
       linkTypeMapName: { },
       linkTypeMapButtonColor: {},
     }
@@ -135,4 +163,7 @@ export default {
     margin-left: 0px !important;
   }
 }
+  .tagsRender {
+    margin-bottom: .3rem;
+  }
 </style>
