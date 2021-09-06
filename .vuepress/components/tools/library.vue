@@ -41,7 +41,7 @@ export default {
     rep: {type: String},
     name: {type: String, default: ''},
     desc: {type: String},
-    tags: {type: Array, default: []}
+    tags: {type: Array, default: () => []}
   },
   computed: {
     starsUrl() {
