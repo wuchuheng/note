@@ -1,9 +1,10 @@
 <template>
     <div class="itemRender">
       <img :src="formatCover(cover)"/>
-      <a :href="rep" target="_blank">
+      <a :href="website.length > 0 ? website : rep" target="_blank">
         <h3>{{formatName(name)}} →</h3>
       </a>
+
       <p>{{desc}}</p>
       <div class="links grid tagsRender"
            :class="{
@@ -39,6 +40,7 @@ export default {
   props: {
     cover: {type: String, default: ''},
     rep: {type: String},
+    website: {type: String, default: ''},
     name: {type: String, default: ''},
     desc: {type: String},
     tags: {type: Array, default: () => []}
@@ -48,18 +50,18 @@ export default {
       const username = this.getUsername()
       const repName = this.getRepName()
 
-      return `https://img.shields.io/github/stars/${username}/${repName}?style=for-the-badge`
+      return `https://img.shields.io/github/stars/${username}/${repName}`
     },
     forkUrl() {
       const username = this.getUsername()
       const repName = this.getRepName()
 
-      return `https://img.shields.io/github/forks/${username}/${repName}?style=for-the-badge`
+      return `https://img.shields.io/github/forks/${username}/${repName}`
     },
     followUrl() {
       const username = this.getUsername()
 
-      return `https://img.shields.io/github/followers/${username}?style=for-the-badge`
+      return `https://img.shields.io/github/followers/${username}`
     }
   },
 

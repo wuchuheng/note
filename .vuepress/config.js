@@ -50,7 +50,7 @@ const config = {
             {
                 "text": "tools",
                 "icon": "reco-other",
-                "link": "/docs/97.shou-lu-shi-yong-de-kai-fa-gong-ju.html"
+                "link": "/docs/96.shou-lu-shi-yong-de-kai-fa-gong-ju.html"
             },
 
         ],
