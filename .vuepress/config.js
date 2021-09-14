@@ -195,6 +195,12 @@ const config = {
                 desc: '专门收集有意思的开源项目',
                 link: 'https://hellogithub.com/'
             },
+            {
+                title: '马丁老爷子',
+                desc: 'Java一哥',
+                link: 'https://martinfowler.com/articles/injection.html'
+            },
+
         ],
         "logo": "/logo.png",
         "search": true,
