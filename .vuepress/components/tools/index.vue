@@ -36,13 +36,14 @@
         <template
             v-for="(link, index) in links"
         >
-          <el-button
-              :key="`key_${index}`"
-              size="mini"
-              :type="linkTypeMapButtonColor[link.type]"
-              plain
-              @click="onDownload(link)"
-          >{{linkTypeMapName[link.type]}}</el-button>
+          <a :href="link.url">
+            <el-button
+                    :key="`key_${index}`"
+                    size="mini"
+                    :type="linkTypeMapButtonColor[link.type]"
+                    plain
+            >{{linkTypeMapName[link.type]}}</el-button>
+          </a>
         </template>
       </div>
     </div>
@@ -100,7 +101,7 @@ export default {
   },
   methods: {
     onDownload(linkInfo) {
-      const link = document.createElement("a");
+
       link.href = linkInfo.url
       link.target = '_blank'
       document.body.appendChild(link);
