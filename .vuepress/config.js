@@ -200,6 +200,11 @@ const config = {
                 desc: 'Java一哥',
                 link: 'https://martinfowler.com/articles/injection.html'
             },
+            {
+                title: 'Takuya Matsuyama',
+                desc: '日本的vim高手，开发者，设计师',
+                link: 'https://www.craftz.dog/'
+            },
 
         ],
         "logo": "/logo.png",
